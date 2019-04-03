@@ -1,7 +1,7 @@
 # GraphDataCollection
 Collect the knowledge data from STUCCO demo using APIs provided by it.
 ## Collect by type
-Types available are listed below.
+Types available are listed below.  
     Account: An account on some specific system(s), either belonging to some specific user or a system account. All software runs as some account. All accounts are associated with a user or users (such as system accounts.)  
     Host: Any entity on the network, including PCs, routers, switches, virtual machines, etc.  
     Software: Any software components on a system, including OSes, applications, services, and libraries.  
