@@ -1,6 +1,8 @@
-# GraphDataCollection
-Collect the knowledge data from STUCCO demo using APIs provided by it.
-## Collect by type
+# GraphDataCollection missions
+1. Collect the knowledge data from STUCCO demo using APIs provided by it.
+2. Collect the network security data from several websites using python crawlers.
+## Mission 1
+### Collect by type
 Types available are listed below.  
     Account: An account on some specific system(s), either belonging to some specific user or a system account. All software runs as some account. All accounts are associated with a user or users (such as system accounts.)  
     Host: Any entity on the network, including PCs, routers, switches, virtual machines, etc.  
@@ -13,5 +15,15 @@ Types available are listed below.
     Address: Any address (IP:Port), either inside or outside of the network.  
     Flow: A flow of traffic between two addresses.  
     Address Range: A range of IP addresses.  
-## Data format
+### Data format
 Store data in json-schema. 
+## Mission 2
+### Url lists
+Malwares:
+https://www.symantec.com/security-center/a-z/A
+Malicious domains:
+http://www.malwaredomainlist.com/mdl2.php?search=&colsearch=All&quantity=All
+NVD:
+https://nvd.nist.gov/vuln/data-feeds
+CNVD:
+http://www.cnvd.org.cn/shareData/list
