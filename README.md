@@ -1,3 +1,14 @@
+<!-- TOC -->
+
+- [GraphDataCollection missions](#graphdatacollection-missions)
+    - [Mission 1](#mission-1)
+        - [Collect by type](#collect-by-type)
+        - [Data format](#data-format)
+    - [Mission 2](#mission-2)
+        - [Url lists](#url-lists)
+        - [Data format](#data-format-1)
+
+<!-- /TOC -->
 # GraphDataCollection missions
 1. Collect the knowledge data from STUCCO demo using APIs provided by it.
 2. Collect the network security data from several websites using python crawlers.
@@ -27,3 +38,4 @@ NVD:
 https://nvd.nist.gov/vuln/data-feeds  
 CNVD:  
 http://www.cnvd.org.cn/shareData/list  
+### Data format
