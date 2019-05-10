@@ -2,7 +2,18 @@
 # -*- coding: UTF-8 -*-
  
 import xml.sax
- 
+import sys
+import re
+import urllib3
+import requests
+import json
+from bs4 import BeautifulSoup
+
+reload(sys)
+sys.setdefaultencoding('utf8')
+global tmp_arr
+tmp_arr = []
+
 class XmlHandler( xml.sax.ContentHandler ):
    def __init__(self):
       self.CurrentData = ""
@@ -10,12 +21,46 @@ class XmlHandler( xml.sax.ContentHandler ):
       self.link = ""
       self.description = ""
       self.pubDate = ""
-
- 
+      self.total = 0
+      self.tmp_dict = {}
+      self.count = 0
+#    def write_json(self):
+#       with open("data" + str(self.count) + ".json", w) as f:
+#             global tmp_arr
+#             f.write(json.dumps(tmp_arr))
+#             tmp_arr = [] # 清空
    # 元素开始事件处理
    def startElement(self, tag, attributes):
       self.CurrentData = tag
       if tag == "item":
+         print self.total
+         self.total += 1
+         if(self.link != ""):
+               self.tmp_dict["title"] = self.title
+               self.tmp_dict["link"] = self.link
+               self.tmp_dict["description"] = self.description
+               self.tmp_dict["pubDate"] = self.pubDate
+               requests.packages.urllib3.disable_warnings()
+               http = urllib3.PoolManager()
+               r = http.request('GET', self.link)
+               html_doc = r.data.decode()
+               soup = BeautifulSoup(html_doc, "html.parser", from_encoding="utf-8")
+               res = soup.find_all(attrs={'name': 'panel-summary'})
+               res_str = ""
+               for i in res:
+                     res_str = i.get_text()
+                     res_arr = res_str.split('\n')
+                     for item in res_arr:
+                           an = re.search('.*: .*', item)
+                           if an:
+                                 print item
+                                 tmp = item.split(": ")
+                                 self.tmp_dict[item[0]] = item[1]
+                           else:
+                                 print "no!! "
+               global tmp_arr
+               tmp_arr.append(self.tmp_dict)
+               self.tmp_dict.clear()
          print "*****Item*****"
  
    # 元素结束事件处理
@@ -29,6 +74,7 @@ class XmlHandler( xml.sax.ContentHandler ):
       elif self.CurrentData == "pubDate":
          print "PubDate:", self.pubDate
       self.CurrentData = ""
+
  
    # 内容事件处理
    def characters(self, content):
@@ -43,7 +89,6 @@ class XmlHandler( xml.sax.ContentHandler ):
          self.pubDate = content
   
 if ( __name__ == "__main__"):
-   
    # 创建一个 XMLReader
    parser = xml.sax.make_parser()
    # turn off namepsaces
@@ -54,3 +99,6 @@ if ( __name__ == "__main__"):
    parser.setContentHandler( Handler )
    
    parser.parse("srlisting.xml")
+   with open('data.json', w) as f:
+         global tmp_arr
+         f.write(json.dumps(tmp_arr))
