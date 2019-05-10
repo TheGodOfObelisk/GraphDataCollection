@@ -36,10 +36,10 @@ class XmlHandler( xml.sax.ContentHandler ):
          print self.total
          self.total += 1
          if(self.link != ""):
-               self.tmp_dict["title"] = self.title
-               self.tmp_dict["link"] = self.link
-               self.tmp_dict["description"] = self.description
-               self.tmp_dict["pubDate"] = self.pubDate
+               self.tmp_dict["x_title"] = self.title
+               self.tmp_dict["x_link"] = self.link
+               self.tmp_dict["x_description"] = self.description
+               self.tmp_dict["x_pubDate"] = self.pubDate
                requests.packages.urllib3.disable_warnings()
                http = urllib3.PoolManager()
                r = http.request('GET', self.link)
@@ -61,6 +61,12 @@ class XmlHandler( xml.sax.ContentHandler ):
                global tmp_arr
                tmp_arr.append(self.tmp_dict)
                self.tmp_dict.clear()
+               if self.total >= 500:# 每500个存一个
+                     with open("data" + str(total) + ".json", w) as f:
+                           global tmp_arr
+                           f.write(json.dumps(tmp_arr))
+                           tmp_arr = []
+                           self.total = 0
          print "*****Item*****"
  
    # 元素结束事件处理
