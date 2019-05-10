@@ -19,11 +19,11 @@ Types available are listed below.
 Store data in json-schema. 
 ## Mission 2
 ### Url lists
-Malwares:
-https://www.symantec.com/security-center/a-z/A
-Malicious domains:
-http://www.malwaredomainlist.com/mdl2.php?search=&colsearch=All&quantity=All
-NVD:
-https://nvd.nist.gov/vuln/data-feeds
-CNVD:
-http://www.cnvd.org.cn/shareData/list
+Malwares:  
+https://www.symantec.com/security-center/a-z/A  
+Malicious domains:  
+http://www.malwaredomainlist.com/mdl2.php?search=&colsearch=All&quantity=All  
+NVD:  
+https://nvd.nist.gov/vuln/data-feeds  
+CNVD:  
+http://www.cnvd.org.cn/shareData/list  
