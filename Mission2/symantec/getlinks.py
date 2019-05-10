@@ -43,6 +43,8 @@ class XmlHandler( xml.sax.ContentHandler ):
                requests.packages.urllib3.disable_warnings()
                http = urllib3.PoolManager()
                r = http.request('GET', self.link)
+               if r.status != 200:
+                     return
                html_doc = r.data.decode()
                soup = BeautifulSoup(html_doc, "html.parser", from_encoding="utf-8")
                res = soup.find_all(attrs={'name': 'panel-summary'})
