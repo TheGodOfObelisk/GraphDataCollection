@@ -11,11 +11,13 @@
             - [Malicious domains](#malicious-domains)
             - [NVD](#nvd)
             - [CNVD](#cnvd)
+    - [Mission 3](#mission-3)
 
 <!-- /TOC -->
 # GraphDataCollection missions
 1. Collect the knowledge data from STUCCO demo using APIs provided by it.
 2. Collect the network security data from several websites using python crawlers.
+3. Store data collected in mission 2 in MYSQL database.
 ## Mission 1
 ### Collect by type
 Types available are listed below.  
@@ -44,7 +46,11 @@ CNVD:
 http://www.cnvd.org.cn/shareData/list  
 ### Data format
 #### Malwares(Symantec)
-Data is stored in json files. All the items have four basic records: title, link, description and pubDate. Other records are collected from web pages their links referring to.
+Data is stored in json files. Each item has four basic records: title, link, description and pubDate. Other records are collected from web pages their links referring to.
 #### Malicious domains
+Data is stored in a csv file. Each record has six properties.
 #### NVD
+Data is stored in xml/json files.
 #### CNVD
+Data is stored in xml files.
+## Mission 3
