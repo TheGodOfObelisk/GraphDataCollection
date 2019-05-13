@@ -73,7 +73,7 @@ class XmlHandler( xml.sax.ContentHandler ):
             #    self.tmp_dict.clear()
                print tmp_arr
                self.tmp_dict = {}
-               if self.total >= 10:# 每100个存一个
+               if self.total >= 10:# 每10个存一个
                      with open("data" + str(self.count) + ".json", 'w') as f:
                            print "*******************************"
                            print tmp_arr
