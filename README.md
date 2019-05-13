@@ -7,6 +7,10 @@
     - [Mission 2](#mission-2)
         - [Url lists](#url-lists)
         - [Data format](#data-format-1)
+            - [Malwares(Symantec)](#malwaressymantec)
+            - [Malicious domains](#malicious-domains)
+            - [NVD](#nvd)
+            - [CNVD](#cnvd)
 
 <!-- /TOC -->
 # GraphDataCollection missions
@@ -39,3 +43,8 @@ https://nvd.nist.gov/vuln/data-feeds
 CNVD:  
 http://www.cnvd.org.cn/shareData/list  
 ### Data format
+#### Malwares(Symantec)
+Data is stored in json files. All the items have four basic records: title, link, description and pubDate. Other records are collected from web pages their links referring to.
+#### Malicious domains
+#### NVD
+#### CNVD
