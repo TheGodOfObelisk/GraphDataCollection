@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <item>
+      <title>Android.Fakeangry</title>
+      <link>http://www.symantec.com/security_response/writeup.jsp?docid=2012-022823-4233-99</link>
+      <description>Type: Trojan</description>
+      <pubDate>Feb 28, 2012</pubDate>
+    </item>
+</rss>

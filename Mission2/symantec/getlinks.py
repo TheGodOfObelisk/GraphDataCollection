@@ -42,8 +42,13 @@ class XmlHandler( xml.sax.ContentHandler ):
                self.tmp_dict["x_pubDate"] = self.pubDate
                requests.packages.urllib3.disable_warnings()
                http = urllib3.PoolManager()
+               # 先校验url格式
+               if not re.match(r'^https?:/{2}\w.+$', self.link):
+                     print "an invalid url!"
+                     return
                r = http.request('GET', self.link)
                if r.status != 200:
+                     print "Error occurred when GETTING url!!"
                      return
                html_doc = r.data.decode()
                soup = BeautifulSoup(html_doc, "html.parser", from_encoding="utf-8")
@@ -55,20 +60,27 @@ class XmlHandler( xml.sax.ContentHandler ):
                      for item in res_arr:
                            an = re.search('.*: .*', item)
                            if an:
+                                 print "yes!!!"
                                  print item
                                  tmp = item.split(": ")
-                                 self.tmp_dict[item[0]] = item[1]
+                                 self.tmp_dict[tmp[0]] = tmp[1]
                            else:
                                  print "no!! "
                global tmp_arr
                tmp_arr.append(self.tmp_dict)
-               self.tmp_dict.clear()
-               if self.total >= 500:# 每500个存一个
-                     with open("data" + str(total) + ".json", w) as f:
-                           global tmp_arr
+            #    print "*********************************"
+            #    print tmp_arr
+            #    self.tmp_dict.clear()
+               print tmp_arr
+               self.tmp_dict = {}
+               if self.total >= 10:# 每100个存一个
+                     with open("data" + str(self.count) + ".json", 'w') as f:
+                           print "*******************************"
+                           print tmp_arr
                            f.write(json.dumps(tmp_arr))
                            tmp_arr = []
                            self.total = 0
+                           self.count += 1
          print "*****Item*****"
  
    # 元素结束事件处理
@@ -107,6 +119,5 @@ if ( __name__ == "__main__"):
    parser.setContentHandler( Handler )
    
    parser.parse("srlisting.xml")
-   with open('data.json', w) as f:
-         global tmp_arr
+   with open('data.json', 'w') as f:
          f.write(json.dumps(tmp_arr))
