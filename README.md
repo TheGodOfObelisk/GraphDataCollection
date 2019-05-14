@@ -45,12 +45,13 @@ https://nvd.nist.gov/vuln/data-feeds
 CNVD:  
 http://www.cnvd.org.cn/shareData/list  
 ### Data format
+It is not recommended that we use GitHub to store backups and database dumps.
 #### Malwares(Symantec)
 Data is stored in json files. Each item has four basic records: title, link, description and pubDate. Other records are collected from web pages their links referring to.
 #### Malicious domains
 Data is stored in a csv file. Each record has six properties.
 #### NVD
-Data is stored in xml/json files.
+Data is stored in xml/json files. Because these files exceed GitHub's file size limit of 100.00 MB, they are not uploaded.
 #### CNVD
 Data is stored in xml files.
 ## Mission 3
