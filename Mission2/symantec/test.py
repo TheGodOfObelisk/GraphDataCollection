@@ -34,10 +34,19 @@
 # a.append(b)
 # print a
 
-import sys
-import re
-a = "jsp?docid=2012-022823-4233-99"
-if not re.match(r'^https?:/{2}\w.+$', a):
-    print "no"
-else:
-    print "ok"
+# import sys
+# import re
+# a = "jsp?docid=2012-022823-4233-99"
+# if not re.match(r'^https?:/{2}\w.+$', a):
+#     print "no"
+# else:
+#     print "ok"
+
+# a = 'sadf'
+# a[:-1]
+# print(a)
+
+a = []
+a.append(1)
+a.append(2)
+print(len(a))

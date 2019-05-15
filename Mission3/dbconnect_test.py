@@ -6,6 +6,8 @@ import json
 import sys
 import os
 
+print u'aaa'
+
 def get_result_list(root_dir):
     try:
         dirs = os.listdir(root_dir)
@@ -34,8 +36,10 @@ cursor = db.cursor()
 miss_list = [u'', u'     Version', u' Note', u' Name', u' Version', u'NOTE ', 
 u'Adware.Look2Me', u'Simplocker', u' LIFEMONITOR', u'ALERTA', u'For APK',
 u'For Name', u'APK', u'APKs', u'Important', u'Keys', u'Optional', u'Varies'
-, u'Icon', u'ERROR', u'NOTE', u'Note', u'Message']
-miss_list1 = [ ]
+, u'Icon', u'ERROR', u'NOTE', u'Note', u'Message', u'ALERT', u'Trigger date',
+u'Application Name', u'Title']
+# 帮助寻找奇怪字段的位置（所处文件）
+miss_list1 = []
 res_dirs = get_result_list("../Mission2/symantec/data/")
 # print res_dirs
 for dir_item in res_dirs:
@@ -50,14 +54,14 @@ for dir_item in res_dirs:
                     print "it is in " + dir_item
                 if i in lists:
                     if len(i) <= 20 and i not in miss_list:
-                        print dict_length
-                        print "the one that is coming"
-                        print i + ": " + str(len(item[i]))
+                        # print dict_length
+                        # print "the one that is coming"
+                        # print i + ": " + str(len(item[i]))
                         if i not in dict_length.keys():
-                            print "initialize length"
+                            # print "initialize length"
                             dict_length[i] = len(item[i])#记录每种字段的最大长度
                         elif i in dict_length.keys() and dict_length[i] < len(item[i]):
-                            print "update length"
+                            # print "update length"
                             dict_length[i] = len(item[i])
                 if i not in lists:
                     # if len(i) > 20:
