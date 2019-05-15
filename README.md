@@ -55,3 +55,4 @@ Data is stored in xml/json files. Because these files exceed GitHub's file size 
 #### CNVD
 Data is stored in xml files.
 ## Mission 3
+Use the file named "symantec_insert.py" to store data from symantec. The table structure is shown in "symantec.sql" file
