@@ -25,3 +25,21 @@ CREATE TABLE `net_test`.`symantec` (
   `CVE_References` VARCHAR(15) CHARACTER SET 'utf8' NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+
+  CREATE TABLE `net_test`.`Malware` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `type` VARCHAR(45) NULL,
+  `link` VARCHAR(100) NULL,
+  `Risk_Impact` VARCHAR(10) NULL,
+  `Updated` VARCHAR(45) NULL,
+  `pubDate` VARCHAR(15) NULL,
+  `Version` VARCHAR(30) NULL,
+  `Publisher` VARCHAR(60) NULL,
+  `File_Names` VARCHAR(110) NULL,
+  `Discovered` VARCHAR(20) NULL,
+  `Also_Known_As` VARCHAR(35) NULL,
+  `Characteristics` VARCHAR(65) NULL,
+  `Region_Reported` VARCHAR(30) NULL,
+  `Area_of_infection` VARCHAR(65) NULL,
+  `Likelihood` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
