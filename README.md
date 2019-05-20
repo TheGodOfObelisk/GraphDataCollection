@@ -12,6 +12,7 @@
             - [NVD](#nvd)
             - [CNVD](#cnvd)
     - [Mission 3](#mission-3)
+    - [Mission 4](#mission-4)
 
 <!-- /TOC -->
 # GraphDataCollection missions
@@ -59,3 +60,5 @@ Use the file named "symantec_insert.py" to store data from symantec. The table s
 malware_init.py: store data into table Malware from symantec.  
 malware_os.py: analyze data in symantec and extract os information from it, update Edges and vertex tables. It refers to the relation of "malware affects os".  
 malware_cve.py: If refers to the relation of "malware exploits vulnerability". Vulneraility is indicated by CVE.
+## Mission 4
+Initialize vulnerability table. Ensure that data is available to "malware_cve.py".  
