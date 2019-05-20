@@ -43,3 +43,16 @@ CREATE TABLE `net_test`.`symantec` (
   `Area_of_infection` VARCHAR(65) NULL,
   `Likelihood` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
+
+insert into `Malware` (`type`, `link`, `Risk_Impact`, `Updated`, `pubDate`, `Version`,
+`Publisher`, `File_Names`, `Discovered`, `Also_Known_As`, `Characteristics`, `Region_Reported`, `Area_of_infection`,
+`Likelihood`) values
+
+
+CREATE TABLE `net_test`.`vertex` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `type` INT NULL,
+  `id_search` INT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `vertex_unique` (`type`, `id_search`),
+  UNIQUE INDEX `idvertex_UNIQUE` (`id` ASC));
