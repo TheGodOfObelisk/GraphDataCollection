@@ -56,3 +56,35 @@ CREATE TABLE `net_test`.`vertex` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `vertex_unique` (`type`, `id_search`),
   UNIQUE INDEX `idvertex_UNIQUE` (`id` ASC));
+
+  insert into vulnerability (`cveId`, `publishedDatetime`, `lastModifiedDatetime`, `summary`, `type`) values 
+            ("CVE-2005-2120", "2005-10-13T06:02:00.000-04:00", "2018-10-12T17:37:05.517-04:00", "Stack-based buffer overflow in the Plug and Play (PnP) service (UMPNPMGR.DLL) in Microsoft Windows 2000 SP4, and XP SP1 and SP2, allows remote or local authenticated attackers to execute arbitrary code via a large number of \"\\" (backslash) characters in a registry key name, which triggers the overflow in a wsprintfW function call.", 1);
+
+
+-- delete
+-- from
+-- 	vulnerability
+-- where
+-- 	cveId in (
+-- 		select * from(
+--         select 
+-- 			cveId
+-- 		from
+-- 			vulnerability
+-- 		group by
+-- 			cveId
+-- 		having
+-- 			count(cveId) > 1
+--         ) b 
+--     ) and id not in(
+-- 		select * from(
+--         select
+-- 			min(id)
+-- 		from
+-- 			vulnerability
+-- 		group by
+-- 			cveId
+-- 		having
+-- 			count(cveId) > 1
+--         ) c 
+--     );
