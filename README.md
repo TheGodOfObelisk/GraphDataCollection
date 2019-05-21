@@ -62,3 +62,5 @@ malware_os.py: analyze data in symantec and extract os information from it, upda
 malware_cve.py: If refers to the relation of "malware exploits vulnerability". Vulneraility is indicated by CVE.
 ## Mission 4
 Initialize vulnerability table. Ensure that data is available to "malware_cve.py".  
+There are 3 steps to initialize vulnerability table. We divide vulnerabilities into 3 types. Type 1 indicates that NVD only and type 3 indicates CNVD only. Type 2 indicates that this entry is the output by combining NVD and CNVD entries. Type 2 records may have more than one CNVD id in its "cnvdId" column.  
+The "vulnerability_init.py" file is used to complete step 1. The "vulnerability_fusion.py" file is used to complete step 2. The "vulnerability_remain.py" file is used to complete step 3.  
