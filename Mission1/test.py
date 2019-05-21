@@ -7,16 +7,8 @@
 #     json.dump(str3, f)
 #     print("write over")
 
-t = """Command execution via shell metachars in INN daemon (innd) 1.5 using "newgroup" and "rmgroup" control messages, and others."""
-pos = t.split("\"")
-print(pos)
-end = ""
-count = 0
-for i in pos:
-    count += 1
-    if count != len(pos):
-        end += i
-        end += "\\\""
-    else:
-        end += i
-print(end)
+t = ((u'CNVD-2018-11403',), (u'CNVD-2018-11403',))
+t1 = ((u'CNVD-2018-11403',))
+# for i in t1:
+#     print i
+print t1[0]

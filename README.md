@@ -19,6 +19,7 @@
 1. Collect the knowledge data from STUCCO demo using APIs provided by it.
 2. Collect the network security data from several websites using python crawlers.
 3. Store data collected in mission 2 in MYSQL database.
+4. Relation analysis.
 ## Mission 1
 ### Collect by type
 Types available are listed below.  
