@@ -28,8 +28,9 @@ def err_log():
 def insert3vul(i):
     # i是当前vulnerability表中没有的CNVDId
     sql = """
-    insert into vulnerability (`cnvdId`) values ("{cnvd}");
+    insert into vulnerability (`cnvdId`, `type`) values ("{cnvd}", 3);
     """.format(cnvd = i)
+    print sql
     try:
         cursor.execute(sql)
         db.commit()
@@ -45,7 +46,7 @@ try:
     for item in data: # 待插入vulnerability的数据
         count += 1
         print item[0]
-        insert3vul(item[0]):
+        insert3vul(item[0])
     print count
 except:
     err_log()
