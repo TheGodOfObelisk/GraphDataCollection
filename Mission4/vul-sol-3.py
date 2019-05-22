@@ -22,3 +22,86 @@ cursor = db.cursor()
 
 # 处理vulnerability表中类型为3的漏洞与solution的关系
 # 类型为3的漏洞是纯CNVD的漏洞了
+
+def getSolId(i):
+    sql = """
+    select id from solution where type = 1 and cnvdId = "{cnvdId}";
+    """.format(cnvdId = i)
+    try:
+        cursor.execute(sql)
+        res = cursor.fetchone()
+        if res != None:
+            return res[0]
+        else:
+            return None
+    except:
+        err_log()
+        return None
+
+def insertVertex(i, t):
+    try:
+        sql = """
+        insert into `vertex` (`type`, `id_search`) values ({m}, {n});
+        """.format(m = t, n = i)
+        print sql
+        cursor.execute(sql)
+        db.commit()
+    except:
+        err_log()
+        db.rollback()
+
+def getVertexId(i, t):
+    try:
+        sql = """
+        select id from `vertex` where type = {m} and id_search = {n};
+        """.format(m = t, n = i)
+        print sql
+        cursor.execute(sql)
+        res = cursor.fetchone()
+        if res != None:
+            return res[0]
+        else:
+            return None 
+    except:
+        err_log()
+        return None
+
+def insertEdge(inId, outId, rel):
+    try:
+        sql = """
+        insert into `Edges` (`type`, `in_vertex_id`, `out_vertex_id`) values ("{relation}", {m}, {n});
+        """.format(relation = rel, m = inId, n = outId)
+        print sql
+        cursor.execute(sql)
+        db.commit()
+    except:
+        err_log()
+        db.rollback()
+
+def UpdateRelation(CNVEId, SolId):
+    print "inserting..."
+    insertVertex(CNVEId, 1)
+    insertVertex(SolId, 5)
+    outId = getVertexId(CNVEId, 6)
+    inId = getVertexId(SolId, 5)
+    if outId != None and inId != None:
+        insertEdge(inId, outId, "hasSolution")
+    else:
+        print "fail to insert an edge"    
+
+try:
+    cursor.execute("""
+    select id, cnvdId from vulnerability where type = 3;
+    """)
+    data = cursor.fetchall()
+    for item in data:
+        CNVEId = item[0]
+        SolId = getSolId(item[1])
+        if CNVEId == None or SolId == None:
+            continue
+        else:
+            UpdateRelation(CNVEId, SolId)
+except:
+    err_log()
+
+db.close()
