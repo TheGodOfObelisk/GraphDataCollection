@@ -83,7 +83,7 @@ def UpdateRelation(CVEId, SolId):
     print "inserting..."
     insertVertex(CVEId, 1)
     insertVertex(SolId, 5)
-    outId = getVertexId(CVEId, 6)
+    outId = getVertexId(CVEId, 1)
     inId = getVertexId(SolId, 5)
     if outId != None and inId != None:
         insertEdge(inId, outId, "hasSolution")

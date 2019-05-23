@@ -25,7 +25,7 @@ cursor = db.cursor()
 
 def getSolId(i):
     sql = """
-    select id from solution where type = 1 and cnvdId = "{cnvdId}";
+    select id from solution where type = 2 and cnvdId = "{cnvdId}";
     """.format(cnvdId = i)
     try:
         cursor.execute(sql)
@@ -78,11 +78,11 @@ def insertEdge(inId, outId, rel):
         err_log()
         db.rollback()
 
-def UpdateRelation(CNVEId, SolId):
+def UpdateRelation(CNVDId, SolId):
     print "inserting..."
-    insertVertex(CNVEId, 1)
+    insertVertex(CNVDId, 1)
     insertVertex(SolId, 5)
-    outId = getVertexId(CNVEId, 6)
+    outId = getVertexId(CNVDId, 1)
     inId = getVertexId(SolId, 5)
     if outId != None and inId != None:
         insertEdge(inId, outId, "hasSolution")
@@ -95,12 +95,12 @@ try:
     """)
     data = cursor.fetchall()
     for item in data:
-        CNVEId = item[0]
+        CNVDId = item[0]
         SolId = getSolId(item[1])
-        if CNVEId == None or SolId == None:
+        if CNVDId == None or SolId == None:
             continue
         else:
-            UpdateRelation(CNVEId, SolId)
+            UpdateRelation(CNVDId, SolId)
 except:
     err_log()
 

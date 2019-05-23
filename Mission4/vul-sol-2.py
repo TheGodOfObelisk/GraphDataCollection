@@ -26,7 +26,7 @@ cursor = db.cursor()
 
 def getSolId(i):
     sql = """
-    select id from solution where type = 1 and cnvdId = "{cnvdId}";
+    select id from solution where type = 2 and cnvdId = "{cnvdId}";
     """.format(cnvdId = i)
     try:
         cursor.execute(sql)
@@ -83,7 +83,7 @@ def UpdateRelation(CNVDId, SolId):
     print "inserting..."
     insertVertex(CNVDId, 1)
     insertVertex(SolId, 5)
-    outId = getVertexId(CNVDId, 6)
+    outId = getVertexId(CNVDId, 1)
     inId = getVertexId(SolId, 5)
     if outId != None and inId != None:
         insertEdge(inId, outId, "hasSolution")
