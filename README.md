@@ -13,6 +13,7 @@
             - [CNVD](#cnvd)
     - [Mission 3](#mission-3)
     - [Mission 4](#mission-4)
+    - [Mission 5](#mission-5)
 
 <!-- /TOC -->
 # GraphDataCollection missions
@@ -65,3 +66,7 @@ malware_cve.py: If refers to the relation of "malware exploits vulnerability". V
 Initialize vulnerability table. Ensure that data is available to "malware_cve.py".  
 There are 3 steps to initialize vulnerability table. We divide vulnerabilities into 3 types. Type 1 indicates that NVD only and type 3 indicates CNVD only. Type 2 indicates that this entry is the output by combining NVD and CNVD entries. Type 2 records may have more than one CNVD id in its "cnvdId" column.  
 The "init.py" file is used to complete step 1. The "fusion.py" file is used to complete step 2. The "remain.py" file is used to complete step 3.  
+## Mission 5
+Analyze the output of Hone. Its format is pacpng. Unfortunately, it is difficult to analyze the output file of Hone. So I need to convert its format into "csv" using "tshark" command within the computer where Hone is configured in.  
+The field that we are most interested in is the summary information of processes or connections.  
+For example, "Process 736 exec'd C:\Windows\System32\lsass.exe as C:\windows\system32\lsass.exe" can offer us the name of the exe file, the number of its process and the path of the exe file.  
