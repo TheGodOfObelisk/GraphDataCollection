@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2019-06-13-16-14-05
+#fields	ts	id	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count
+1560413645.761782	Fba6J61dZalWUj8nW4	3	2D0001F35422B3307EEC9502B500000001F354	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	1517298881.000000	1580370881.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.vortex.data.microsoft.com,vortex.data.microsoft.com	-	-	-	-	-
+1560413645.761782	FSaSuE2Y07tJW2q2M6	3	0888CD525F1924444D14A58291DEB952	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	CN=Baltimore CyberTrust Root,OU=CyberTrust,O=Baltimore,C=IE	1463719983.000000	1716180783.000000	rsaEncryption	sha256WithRSAEncryption	rsa	4096	65537	-	-	-	-	-	T	0
+1560413691.673778	FtnDMv3fQQ3mOyViG	3	049CF8E866C702CD669BA8269BD39818	CN=*.oschina.net	CN=TrustAsia TLS RSA CA,OU=Domain Validated SSL,O=TrustAsia Technologies\\, Inc.,C=CN	1528819200.000000	1565582400.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.oschina.net,oschina.net	-	-	-	F	-
+1560413691.673778	FHm1j62hC39ZjQz9c3	3	0580267F06F29553348E1C185A5EEE2E	CN=TrustAsia TLS RSA CA,OU=Domain Validated SSL,O=TrustAsia Technologies\\, Inc.,C=CN	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1512707306.000000	1828240106.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+#close	2019-06-13-16-15-06

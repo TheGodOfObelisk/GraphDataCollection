@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2019-06-13-16-14-05
+#fields	ts	fuid	tx_hosts	rx_hosts	conn_uids	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	set[addr]	set[addr]	set[string]	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1560413645.761782	Fba6J61dZalWUj8nW4	111.221.29.254	192.168.1.157	CB9BY112hODRrSvh	SSL	0	MD5,X509,SHA1	application/x-x509-user-cert	-	0.000000	-	F	1767	-	0	0	F	-	daebd1ded744bd04468ce4e0ab78f9e1	115dbd9bfa76965c9fe0d05b3cdb64e4bd0d8977	-	-	-	-
+1560413645.761782	FSaSuE2Y07tJW2q2M6	111.221.29.254	192.168.1.157	CB9BY112hODRrSvh	SSL	0	MD5,X509,SHA1	application/x-x509-ca-cert	-	0.000000	-	F	1464	-	0	0	F	-	e6d5a1f086158c05bdcb1015f323ad24	ad898ac73df333eb60ac1f5fc6c4b2219ddb79b7	-	-	-	-
+1560413691.673778	FtnDMv3fQQ3mOyViG	120.55.226.24	192.168.1.157	CmlgmU3Vt0g3Z8deNh	SSL	0	MD5,X509,SHA1	application/x-x509-user-cert	-	0.000000	-	F	1434	-	0	0	F	-	a1d29f8366112f4899ad5c754004280f	58cc70bb2d65659c7bd819877f72d7165b2afb52	-	-	-	-
+1560413691.673778	FHm1j62hC39ZjQz9c3	120.55.226.24	192.168.1.157	CmlgmU3Vt0g3Z8deNh	SSL	0	MD5,X509,SHA1	application/x-x509-ca-cert	-	0.000000	-	F	1202	-	0	0	F	-	1d53326643d689c49dc2956250ff52c0	ec4191d1f357bd539483286fa67fd219143d2611	-	-	-	-
+#close	2019-06-13-16-15-06

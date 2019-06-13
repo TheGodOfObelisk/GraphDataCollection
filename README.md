@@ -16,6 +16,9 @@
     - [Mission 5](#mission-5)
         - [Command](#command)
         - [Analyze](#analyze)
+    - [Mission 6](#mission-6)
+    - [Mission 7](#mission-7)
+        - [Local Bro Collector](#local-bro-collector)
 
 <!-- /TOC -->
 # GraphDataCollection missions
@@ -80,3 +83,8 @@ honeutil read -d 'F:/'
 ### Analyze
 The field that we are most interested in is the summary information of processes or connections.  
 For example, "Process 736 exec'd C:\Windows\System32\lsass.exe as C:\windows\system32\lsass.exe" can offer us the name of the exe file, the number of its process and the path of the exe file.  
+## Mission 6
+Message Queue.  
+## Mission 7
+### Local Bro Collector
+Get traffic information from bro logs.  

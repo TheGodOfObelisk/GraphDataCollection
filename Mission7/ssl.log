@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssl
+#open	2019-06-13-16-14-06
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	cert_chain_fuids	client_cert_chain_fuids	subject	issuer	client_subject	client_issuer
+#types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	vector[string]	vector[string]	string	string	string	string
+1560413645.425813	CB9BY112hODRrSvh	192.168.1.157	41284	111.221.29.254	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	Fba6J61dZalWUj8nW4,FSaSuE2Y07tJW2q2M6	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560413691.609809	CmlgmU3Vt0g3Z8deNh	192.168.1.157	57244	120.55.226.24	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	www.oschina.net	F	-	http/1.1	T	FtnDMv3fQQ3mOyViG,FHm1j62hC39ZjQz9c3	(empty)	CN=*.oschina.net	CN=TrustAsia TLS RSA CA,OU=Domain Validated SSL,O=TrustAsia Technologies\\, Inc.,C=CN	-	-
+#close	2019-06-13-16-15-06
