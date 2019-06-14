@@ -33,10 +33,10 @@
 
 # 2019.1.18 todo-list
 # convert ts to the form of "YYYY:MM:DD-HH:MM:SS", which is easier to understand
-# in "ips": mark the timestamp of each ip
-# in "protocols": mark the number that indicate how many time this protocol has beem confirmed
+# in "ips": mark the timestamp of each ip 
+# in "protocols": mark the number that in m confirmed
 # the value of n is dynamic
-# there are some problems in updating ips
+# there are some problems in updating ips 
 # 1. segment fault
 # 2. redundant ip in "ips" field
 # 3, three records missing ips(uninitialized)
@@ -52,12 +52,12 @@ export{
     # unfortunately, its json format is incorrect
     # We need to handle the json format output line by line
     # redef LogAscii::use_json = T;
-	# Define the record type that will contain the data to log.
+	# Define the record type that will contai 
     type host_info: record{
         ts: time    &log;
-        ip: addr      &log;#indicates the newest ip
-        ips: string     &default="" &log; # historical ips, ordered by their
-        username: string    &default="" &log;
+        ip: addr      &log;#indicates the new 
+        ips: string     &default="" &log; # h 
+        username: string    &default="" &log; 
         hostname: string    &default="" &log;
         mac: string     &default="" &log;
         os: string      &default="" &log;
@@ -83,7 +83,7 @@ function update_single_host(hinfo: HOST_INFO::host_info, protocol: string, index
     if(hostlist[index]$ips == ""){
         # print fmt("initialize ips of index %d", index);
         local t: time = current_time();
-        hostlist[index]$ips = fmt("%s", strftime("%Y-%m-%d %H:%M:%S|", t) + tmp_ip);
+        hostlist[index]$ips = fmt("%s", strftime("%Y:%m:%d-%H:%M:%S|", t) + tmp_ip);
     }
     if(hostlist[index]$protocols == ""){
         # print fmt("initialize protocols of index %d", index);
@@ -99,7 +99,7 @@ function update_single_host(hinfo: HOST_INFO::host_info, protocol: string, index
         if(tmp_ip !in hostlist[index]$ips){
             # a new ip comes, append it to the end of ips
             local t1: time = current_time();
-            hostlist[index]$ips += fmt(",%s", strftime("%Y-%m-%d %H:%M:%S|", t1) + tmp_ip);
+            hostlist[index]$ips += fmt(",%s", strftime("%Y:%m:%d-%H:%M:%S|", t1) + tmp_ip);
             print "append ips";
         } else {
             print "update ips";
@@ -147,7 +147,7 @@ function update_single_host(hinfo: HOST_INFO::host_info, protocol: string, index
                 # up_index is applied to update tmp_tlb
                 # from now on, tmp_tlb_ip is useless
                 local t2: time = current_time();
-                tmp_tlb[up_index] = fmt("%s", strftime("%Y-%m-%d %H:%M:%S|", t2) + tmp_ip);
+                tmp_tlb[up_index] = fmt("%s", strftime("%Y:%m:%d-%H:%M:%S|", t2) + tmp_ip);
             }
             for(key in tmp_tlb){
                 print fmt("[%d]=>%s", key, tmp_tlb[key]);

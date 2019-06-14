@@ -3,14 +3,24 @@
 #empty_field	(empty)
 #unset_field	-
 #path	simple_hosts
-#open	2019-06-13-16-15-06
+#open	2019-06-14-16-34-51
 #fields	ip	ips	username	hostname	mac	os	protocols
 #types	addr	string	string	string	string	string	string
-6.6.6.6	(empty)	(empty)	clients.l.google.com	(empty)	(empty)	(empty)
-111.221.29.254	2019-06-13 16:14:05|111.221.29.254	(empty)	hk2.vortex.data.microsoft.com.akadns.net	(empty)	(empty)	ssl:2
-192.168.1.108	2019-06-13 16:14:16|192.168.1.108	(empty)	brwa86bad339915.local	(empty)	(empty)	dns:13
-192.168.1.1	2019-06-13 16:14:35|192.168.1.1	(empty)	(empty)	74:7d:24:4b:87:4d	(empty)	arp:2,dns:1
-192.168.1.157	2019-06-13 16:14:51|192.168.1.157	(empty)	(empty)	30:b4:9e:b0:9f:bb	(empty)	dns:2,ssl:1
-192.168.1.50	2019-06-13 16:14:45|192.168.1.50	(empty)	(empty)	30:b4:9e:a9:e8:5b	(empty)	arp:3
-120.55.226.24	2019-06-13 16:14:51|120.55.226.24	(empty)	4cfmi96n8aqisx8m.aligaofang.com	(empty)	(empty)	ssl:2
-#close	2019-06-13-16-15-06
+192.168.1.141	2019:06:14-16:31:29|192.168.1.141	(empty)	(empty)	8c:eb:c6:b3:5e:6c	(empty)	arp:6
+192.168.1.47	2019:06:14-16:30:57|192.168.1.47	(empty)	(empty)	30:b4:9e:a9:ea:6e	(empty)	arp:27,dns:4
+192.168.1.50	(empty)	(empty)	(empty)	30:b4:9e:a9:e8:5b	(empty)	(empty)
+192.168.1.108	2019:06:14-16:30:58|192.168.1.108	(empty)	brwa86bad339915.local	(empty)	(empty)	dns:24
+40.77.226.250	2019:06:14-16:30:59|40.77.226.250	(empty)	hk2.vortex.data.microsoft.com.akadns.net	(empty)	(empty)	ssl:8,dns:3
+202.108.23.152	2019:06:14-16:30:59|202.108.23.152	(empty)	hm.e.shifen.com	(empty)	(empty)	ssl:3
+192.168.1.100	2019:06:14-16:31:06|192.168.1.100	(empty)	(empty)	f4:b7:e2:45:41:37	(empty)	arp:41
+203.208.41.79	2019:06:14-16:31:09|203.208.41.95,2019:06:14-16:31:09|203.208.41.87,2019:06:14-16:31:09|203.208.41.79	(empty)	clientservices.googleapis.com	(empty)	(empty)	dns:4
+192.168.1.161	2019:06:14-16:31:20|192.168.1.161	(empty)	(empty)	9a:e3:6f:b3:fc:87	(empty)	arp:2
+192.168.1.161	2019:06:14-16:31:27|192.168.1.161,2019:06:14-16:31:27|fe80::c86c:1932:b195:6429	(empty)	wei-desktop.local	(empty)	(empty)	dns:10
+192.168.1.1	2019:06:14-16:31:47|192.168.1.1	(empty)	(empty)	74:7d:24:4b:87:4d	(empty)	dns:12,arp:22
+192.168.1.121	2019:06:14-16:32:12|192.168.1.121	(empty)	(empty)	30:b4:9e:f1:eb:f3	(empty)	dns:7
+192.168.1.157	2019:06:14-16:32:20|192.168.1.157	(empty)	(empty)	30:b4:9e:b0:9f:bb	(empty)	dns:12,ssl:2,arp:1
+6.6.6.6	2019:06:14-16:32:27|6.6.6.6	(empty)	clients.l.google.com	(empty)	(empty)	dns:4
+52.74.223.119	2019:06:14-16:32:33|52.74.223.119	(empty)	github.com	(empty)	(empty)	ssl:2
+42.123.113.36	2019:06:14-16:32:53|1.82.132.249,2019:06:14-16:32:53|183.134.101.248,2019:06:14-16:32:53|42.123.113.44,2019:06:14-16:32:53|42.123.113.36	(empty)	vm.aicdn.com	(empty)	(empty)	dns:5
+6.6.6.6	(empty)	(empty)	android.l.google.com	(empty)	(empty)	(empty)
+#close	2019-06-14-16-34-52

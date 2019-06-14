@@ -3,9 +3,17 @@
 #empty_field	(empty)
 #unset_field	-
 #path	ssl
-#open	2019-06-13-16-14-06
+#open	2019-06-14-16-30-59
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	cert_chain_fuids	client_cert_chain_fuids	subject	issuer	client_subject	client_issuer
 #types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	vector[string]	vector[string]	string	string	string	string
-1560413645.425813	CB9BY112hODRrSvh	192.168.1.157	41284	111.221.29.254	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	Fba6J61dZalWUj8nW4,FSaSuE2Y07tJW2q2M6	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
-1560413691.609809	CmlgmU3Vt0g3Z8deNh	192.168.1.157	57244	120.55.226.24	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	www.oschina.net	F	-	http/1.1	T	FtnDMv3fQQ3mOyViG,FHm1j62hC39ZjQz9c3	(empty)	CN=*.oschina.net	CN=TrustAsia TLS RSA CA,OU=Domain Validated SSL,O=TrustAsia Technologies\\, Inc.,C=CN	-	-
-#close	2019-06-13-16-15-06
+1560501057.881836	CuSwR238edncKRHsg2	192.168.1.157	29064	40.77.226.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	FMZJGk2KXJRxUU3Bx8,FEnabE36DoHQ6fzSwg	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560501059.581825	CS6hXoEqf9VorFWmk	192.168.1.157	25980	202.108.23.152	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	-	hm.baidu.com	T	-	http/1.1	T	-	-	-	-	-	-
+1560501059.001811	C94T2G3HD8kePDCz05	192.168.1.157	29066	40.77.226.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	FCKFnF2ScLdfBikGQ2,FoFo1P2jBBRJPGmfmg	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560501070.997783	CQwODl4tLbSBKDWNJ8	192.168.1.157	19926	203.208.41.88	443	TLSv13	TLS_AES_128_GCM_SHA256	-	clientservices.googleapis.com	T	-	-	T	-	-	-	-	-	-
+1560501074.881780	CM2gys1Pz0ohgnIc8b	192.168.1.157	25986	202.108.23.152	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	-	hm.baidu.com	T	-	http/1.1	T	-	-	-	-	-	-
+1560501094.613764	CS8E1t1Bbcn96S0E7h	192.168.1.157	29078	40.77.226.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	FooNe53cDW8BiwKKNd,FYmiy72Gv208BbvTcb	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560501109.605818	ClllJz3GEsBpSAYPk5	192.168.1.157	29080	40.77.226.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	Ft1oPcsDYqx3my0j3,FxaGgE2PQDIflXDECi	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560501113.189787	CBTQVRQw7nlIxwKDi	192.168.1.157	29082	40.77.226.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	vortex.data.microsoft.com	F	-	-	T	FpHqx143x1Gwflq2T7,FtMHd71nEOfQ44qWCj	(empty)	CN=*.vortex.data.microsoft.com	CN=Microsoft IT TLS CA 5,OU=Microsoft IT,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US	-	-
+1560501153.429813	CsRXaKiQI3iZFpn1j	192.168.1.157	64310	52.74.223.119	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	github.com	F	-	http/1.1	T	FFpUC835h7YupHlKK7,FXTHW03wAvMDgBcZO6	(empty)	CN=github.com,O=GitHub\\, Inc.,L=San Francisco,ST=California,C=US,serialNumber=5157550,jurisdictionST=Delaware,jurisdictionC=US,businessCategory=Private Organization	CN=DigiCert SHA2 Extended Validation Server CA,OU=www.digicert.com,O=DigiCert Inc,C=US	-	-
+1560501173.277797	ChuUUg242ukyOwPtx5	192.168.1.157	23414	183.134.101.250	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	x25519	static.oschina.net	F	-	h2	T	FB1Q6L2jQpKlKd9O1i,Ff6Uwo2Gxn21uoV9R7	(empty)	CN=*.oschina.net	CN=TrustAsia TLS RSA CA,OU=Domain Validated SSL,O=TrustAsia Technologies\\, Inc.,C=CN	-	-
+#close	2019-06-14-16-34-51

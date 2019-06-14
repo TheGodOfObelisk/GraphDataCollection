@@ -3,9 +3,9 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2019-06-13-16-13-59
+#open	2019-06-14-16-30-57
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1560413639.489764	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	bro
-1560413697.965836	-	-	-	-	-	unknown_protocol_2	-	F	bro
-#close	2019-06-13-16-15-06
+1560501057.829838	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	bro
+1560501087.113782	-	-	-	-	-	unknown_protocol_2	-	F	bro
+#close	2019-06-14-16-34-51

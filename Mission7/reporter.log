@@ -3,16 +3,26 @@
 #empty_field	(empty)
 #unset_field	-
 #path	reporter
-#open	2019-06-13-16-13-59
+#open	2019-06-14-16-30-57
 #fields	ts	level	message	location
 #types	time	enum	string	string
-1560413639.805761	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413645.097754	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413656.985773	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413675.313782	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413675.313782	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413685.053814	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413691.553777	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
-1560413706.787006	Reporter::INFO	received termination signal	(empty)
-1560413706.787006	Reporter::INFO	265 packets received on interface wlx30b49eb09fbb, 0 dropped	(empty)
-#close	2019-06-13-16-15-06
+1560501057.881836	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501057.881836	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501057.945810	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501058.037800	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501058.185795	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501059.541838	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501066.453841	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501069.633804	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501079.629794	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501084.325789	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501102.577765	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501102.877848	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501113.305801	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501141.457790	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501153.201809	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501173.153803	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501282.597794	Reporter::ERROR	no such index (HOST_INFO::hostlist[flattenHOST_INFO::hostlist])	./updateHost.bro, line 251
+1560501291.941867	Reporter::INFO	received termination signal	(empty)
+1560501291.941867	Reporter::INFO	1051 packets received on interface wlx30b49eb09fbb, 0 dropped	(empty)
+#close	2019-06-14-16-34-52

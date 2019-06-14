@@ -88,3 +88,4 @@ Message Queue.
 ## Mission 7
 ### Local Bro Collector
 Get traffic information from bro logs.  
+File "host-summary.log" stores the host information that collected by bro.  Utilize this file through "broReader.bro".  
