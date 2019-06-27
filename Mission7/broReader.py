@@ -21,7 +21,7 @@ db = MySQLdb.connect(
 
 cursor = db.cursor()
 
-cmd = "awk '/^[^#]/ {print $3, $5, $6}' host-summary.log"
+cmd = "awk '/^[^#]/ {print $3, $5, $6, $9}' host-summary.log"
 sub = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
 str1 = sub.stdout.read()
 sub.communicate()
@@ -33,6 +33,7 @@ for item in items:
         ips = res[0]
         hostname = res[1]
         mac = res[2]
+        protocol = res[3]
         if "192.168.1." in ips:
             ip_arr = ips.split(',')
             print ip_arr
@@ -58,6 +59,38 @@ for item in items:
             (select `id` from `System` where `MACAddress` = "{ma}")
             """.format(ma = mac, ip_t = ipt, lt = ltt, hn = hostname)
             try:
+                print sql
+                cursor.execute(sql)
+                db.commit()
+            except:
+                err_log()
+            sql = """
+            select `id` from `System` where `MACAddress` = "{ma}"
+            """.format(ma = mac)
+            systemid = -1
+            try:
+                print sql
+                cursor.execute(sql)
+                res = cursor.fetchone()
+                if res != None:
+                    systemid = res[0]
+                else:
+                    print "error! systemid is none"
+            except:
+                err_log()
+            sql = """
+            update `Protocol` set `Protocols` = "{pr}"  where `SysId` = {sid}
+            """.format(pr = protocol, sid = systemid)
+            try:
+                print sql
+                cursor.execute(sql)
+                db.commit()
+            except:
+                err_log()
+            sql = """
+            insert into `Protocol` (`Protocols`, `SysId`) values ("{pr}", {sid})
+            """.format(pr = protocol, sid = systemid)
+            try:# don't worry about duplicated systemid in Protocol
                 print sql
                 cursor.execute(sql)
                 db.commit()

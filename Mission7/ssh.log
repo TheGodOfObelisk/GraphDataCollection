@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssh
+#open	2019-06-17-09-58-32
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	auth_success	auth_attempts	direction	client	server	cipher_alg	mac_alg	compression_alg	kex_alg	host_key_alg	host_key
+#types	time	string	addr	port	addr	port	count	bool	count	enum	string	string	string	string	string	string	string	string
+1560736531.069813	CUbdCD4nDbb0sLMjL	35.233.98.199	38314	113.54.215.113	22	2	-	0	-	SSH-2.0-Go	SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8	-	-	-	-	-	-
+#close	2019-06-17-09-58-32

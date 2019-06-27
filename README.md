@@ -89,3 +89,5 @@ Message Queue.
 ### Local Bro Collector
 Get traffic information from bro logs.  
 File "host-summary.log" stores the host information that collected by bro.  Utilize this file through "broReader.bro".  
+Collect infomation for `System`, `IP`, `Address`, `DNSName` and relationships among them.  
+Consider adding `Protocol` to our ontology.  

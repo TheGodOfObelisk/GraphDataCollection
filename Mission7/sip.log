@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	sip
+#open	2019-06-17-09-48-43
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	uri	date	request_from	request_to	response_from	response_to	reply_to	call_id	seq	subject	request_path	response_path	user_agent	status_code	status_msg	warning	request_body_len	response_body_len	content_type
+#types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	string	string	string	string	vector[string]	vector[string]	string	count	string	string	count	count	string
+1560736063.177767	CIoKLz2qUyRENF3hwh	195.154.172.61	5087	113.54.215.113	5061	0	OPTIONS	sip:100@113.54.215.113	-	"sipvicious"<sip:100@1.1.1.1>	"sipvicious"<sip:100@1.1.1.1>	-	-	-	613661634851396578565431	1 OPTIONS	-	SIP/2.0/UDP 127.0.0.1:5087	(empty)	friendly-scanner	-	-	-	0	-	-
+1560736063.177767	CbFSosDLIZYjnLFGd	195.154.172.61	5087	113.54.215.113	5058	0	OPTIONS	sip:100@113.54.215.113	-	"sipvicious"<sip:100@1.1.1.1>	"sipvicious"<sip:100@1.1.1.1>	-	-	-	550676268314821312403684	1 OPTIONS	-	SIP/2.0/UDP 127.0.0.1:5087	(empty)	friendly-scanner	-	-	-	0	-	-
+1560736063.177767	ClZ8Aa4BwI1bnX1ETi	195.154.172.61	5087	113.54.215.113	5062	0	OPTIONS	sip:100@113.54.215.113	-	"sipvicious"<sip:100@1.1.1.1>	"sipvicious"<sip:100@1.1.1.1>	-	-	-	529496808155594369573830	1 OPTIONS	-	SIP/2.0/UDP 127.0.0.1:5087	(empty)	friendly-scanner	-	-	-	0	-	-
+1560736063.177767	C9PbeA4yBINVzfNGH3	195.154.172.61	5087	113.54.215.113	5060	0	OPTIONS	sip:100@113.54.215.113	-	"sipvicious"<sip:100@1.1.1.1>	"sipvicious"<sip:100@1.1.1.1>	-	-	-	924232036815676388723360	1 OPTIONS	-	SIP/2.0/UDP 127.0.0.1:5087	(empty)	friendly-scanner	-	-	-	0	-	-
+1560736063.177767	CSNxu24x3HG2mVsQ8c	195.154.172.61	5087	113.54.215.113	5059	0	OPTIONS	sip:100@113.54.215.113	-	"sipvicious"<sip:100@1.1.1.1>	"sipvicious"<sip:100@1.1.1.1>	-	-	-	341683766374562989640140	1 OPTIONS	-	SIP/2.0/UDP 127.0.0.1:5087	(empty)	friendly-scanner	-	-	-	0	-	-
+#close	2019-06-17-09-58-32

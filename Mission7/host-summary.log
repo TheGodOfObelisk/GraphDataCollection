@@ -3,24 +3,19 @@
 #empty_field	(empty)
 #unset_field	-
 #path	host-summary
-#open	2019-06-14-16-34-51
+#open	2019-06-17-10-06-43
 #fields	ts	ip	ips	username	hostname	mac	os	description	protocols
 #types	time	addr	string	string	string	string	string	string	string
-1560501272.965813	192.168.1.141	2019:06:14-16:31:29|192.168.1.141	(empty)	(empty)	8c:eb:c6:b3:5e:6c	(empty)	arp_request	arp:6
-1560501243.597848	192.168.1.47	2019:06:14-16:30:57|192.168.1.47	(empty)	(empty)	30:b4:9e:a9:ea:6e	(empty)	arp_request	arp:27,dns:4
-1560501057.945810	192.168.1.50	(empty)	(empty)	(empty)	30:b4:9e:a9:e8:5b	(empty)	arp_request	(empty)
-1560501285.769800	192.168.1.108	2019:06:14-16:30:58|192.168.1.108	(empty)	brwa86bad339915.local	(empty)	(empty)	dns_A_reply	dns:24
-1560501113.189787	40.77.226.250	2019:06:14-16:30:59|40.77.226.250	(empty)	hk2.vortex.data.microsoft.com.akadns.net	(empty)	(empty)	dns_A_reply	ssl:8,dns:3
-1560501074.881780	202.108.23.152	2019:06:14-16:30:59|202.108.23.152	(empty)	hm.e.shifen.com	(empty)	(empty)	dns_A_reply	ssl:3
-1560501267.945795	192.168.1.100	2019:06:14-16:31:06|192.168.1.100	(empty)	(empty)	f4:b7:e2:45:41:37	(empty)	arp_request	arp:41
-1560501069.633804	203.208.41.79	2019:06:14-16:31:09|203.208.41.95,2019:06:14-16:31:09|203.208.41.87,2019:06:14-16:31:09|203.208.41.79	(empty)	clientservices.googleapis.com	(empty)	(empty)	dns_A_reply	dns:4
-1560501080.281791	192.168.1.161	2019:06:14-16:31:20|192.168.1.161	(empty)	(empty)	9a:e3:6f:b3:fc:87	(empty)	arp_request	arp:2
-1560501087.973847	192.168.1.161	2019:06:14-16:31:27|192.168.1.161,2019:06:14-16:31:27|fe80::c86c:1932:b195:6429	(empty)	wei-desktop.local	(empty)	(empty)	dns_AAAA_reply	dns:10
-1560501282.581801	192.168.1.1	2019:06:14-16:31:47|192.168.1.1	(empty)	(empty)	74:7d:24:4b:87:4d	(empty)	arp_request	dns:12,arp:22
-1560501284.025835	192.168.1.121	2019:06:14-16:32:12|192.168.1.121	(empty)	(empty)	30:b4:9e:f1:eb:f3	(empty)	arp_request	dns:7
-1560501282.581801	192.168.1.157	2019:06:14-16:32:20|192.168.1.157	(empty)	(empty)	30:b4:9e:b0:9f:bb	(empty)	arp_reply	dns:12,ssl:2,arp:1
-1560501222.797831	6.6.6.6	2019:06:14-16:32:27|6.6.6.6	(empty)	clients.l.google.com	(empty)	(empty)	dns_A_reply	dns:4
-1560501153.429813	52.74.223.119	2019:06:14-16:32:33|52.74.223.119	(empty)	github.com	(empty)	(empty)	dns_A_reply	ssl:2
-1560501173.153803	42.123.113.36	2019:06:14-16:32:53|1.82.132.249,2019:06:14-16:32:53|183.134.101.248,2019:06:14-16:32:53|42.123.113.44,2019:06:14-16:32:53|42.123.113.36	(empty)	vm.aicdn.com	(empty)	(empty)	dns_A_reply	dns:5
-1560501282.597794	6.6.6.6	(empty)	(empty)	android.l.google.com	(empty)	(empty)	dns_A_reply	(empty)
-#close	2019-06-14-16-34-52
+1560737202.357783	192.168.1.108	2019:06:17-09:58:59|192.168.1.108	(empty)	brwa86bad339915.local	(empty)	(empty)	dns_A_reply	dns:54
+1560736754.665800	192.168.1.97	2019:06:17-09:59:14|192.168.1.97,2019:06:17-09:59:14|fe80::f579:426e:2f8c:bdda	(empty)	desktop-qam8ba3.local	(empty)	(empty)	dns_AAAA_reply	dns:11
+1560736763.673783	6.6.6.6	(empty)	(empty)	android.l.google.com	(empty)	(empty)	dns_A_reply	(empty)
+1560737131.157764	13.250.177.223	2019:06:17-09:59:27|52.74.223.119,2019:06:17-10:05:30|13.250.177.223	(empty)	github.com	(empty)	(empty)	dns_A_reply	ssl:6,dns:2
+1560736790.193773	192.168.1.108	2019:06:17-09:59:50|192.168.1.108	(empty)	(empty)	a8:6b:ad:33:99:15	(empty)	arp_request	arp:2
+1560737202.053842	192.168.1.141	2019:06:17-10:00:28|192.168.1.141	(empty)	(empty)	8c:eb:c6:b3:5e:6c	(empty)	arp_request	arp:11
+1560737131.157764	192.168.1.157	2019:06:17-10:00:00|192.168.1.157	(empty)	(empty)	30:b4:9e:b0:9f:bb	(empty)	arp_request	arp:26,dns:5,ssl:7
+1560737185.725776	192.168.1.1	2019:06:17-10:00:34|192.168.1.1	(empty)	(empty)	74:7d:24:4b:87:4d	(empty)	arp_reply	arp:24,dns:3
+1560737180.957824	192.168.1.50	2019:06:17-10:00:18|192.168.1.50	(empty)	(empty)	30:b4:9e:a9:e8:5b	(empty)	arp_request	arp:10
+1560736862.813806	203.208.41.87	2019:06:17-10:01:02|203.208.41.95,2019:06:17-10:01:02|203.208.41.79,2019:06:17-10:01:02|203.208.41.87	(empty)	clientservices.googleapis.com	(empty)	(empty)	dns_A_reply	dns:4
+1560736920.865800	192.168.1.165	2019:06:17-10:02:00|192.168.1.165,2019:06:17-10:02:00|fe80::e9f5:d746:88d3:bd8b	(empty)	desktop-a8jgl4f.local	(empty)	(empty)	dns_AAAA_reply	dns:5
+1560737186.149792	192.168.1.243	2019:06:17-10:06:26|192.168.1.243,2019:06:17-10:06:26|fe80::708e:2017:718:1263	(empty)	desktop-75sbirh.local	(empty)	(empty)	dns_AAAA_reply	dns:6
+#close	2019-06-17-10-06-43
